@@ -1,0 +1,78 @@
+.game-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    padding: 70px 50px;
+    height: 45vh;
+    color: #ffffff;
+    position: relative;
+}
+
+.game-preview::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.game-preview * {
+    z-index: 2;
+}
+
+.game-preview__title {
+    font-size: 3.5em;
+    margin-bottom: 35px;
+}
+
+.game-data {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+.game-data__release {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.game-data__metacritic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #000000;
+    font-weight: 900;
+    font-size: 1.3em;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: auto;
+}
+
+.game-preview__genres {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.platforms {
+    display: flex;
+    gap: 6px;
+}
+
+.platforms__platform-img {
+    width: 30px;
+    height: 30px;
+}

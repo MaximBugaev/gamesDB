@@ -1,0 +1,76 @@
+.tag-select-wrap {
+    width: 30%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 2px 13px -5px rgba(34, 60, 80, 0.49);
+    -moz-box-shadow: 0px 2px 13px -5px rgba(34, 60, 80, 0.49);
+    box-shadow: 0px 2px 13px -5px rgba(34, 60, 80, 0.49);
+
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tag-select-wrap__select {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px 7px;
+    color: rgb(104, 104, 104);
+
+    cursor: pointer;
+    position: relative;
+}
+
+.tag-select-wrap__tags {
+    display: none;
+    content: '';
+    position: absolute;
+
+    padding: 10px 0;
+
+    left: 0;
+    top: calc(100% - 10px);
+    width: 100%;
+    z-index: 3;
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.tag-select-wrap__tags_opened {
+    display: block;
+}
+
+.tag-select-wrap__select::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 15px;
+
+    background-image: url('../../../../shared/assets/imgs/dropdownArrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: #ffffff;
+
+    pointer-events: none;
+}
+
+.tag-select__tag {
+    display: flex;
+
+    padding: 10px 10px;
+    font-weight: 900;
+    color: #999999
+}
+
+.tag-select__tag:not(:first-of-type) {
+    color: #235dff;
+}
+
+.tag-select__input {
+    margin-right: 10px;
+}

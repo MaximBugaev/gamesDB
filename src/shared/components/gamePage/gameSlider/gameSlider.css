@@ -1,0 +1,40 @@
+.thumbs-swiper {
+    /* padding: 20px 0 !important; */
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 40px;
+    color: #bdbdbd;
+}
+
+.thumbs-swiper .swiper-wrapper {
+    justify-content: center;
+    gap: 20px;
+}
+
+.thumbs-slide {
+    display: flex !important;
+    align-items: center;
+
+    width: fit-content !important; 
+    cursor: pointer;
+    height: 60px !important;
+}
+
+.swiper-slide-thumb-active {
+    color: #474747;
+    border-bottom: 2px #5d88ff solid;
+}
+
+.game-slide {
+    width: 1300px;
+    font-size: 1.2em;
+    color: #474747;
+    margin-inline: auto;
+}
+
+.game-advantages {
+    margin-bottom: 20px;
+}
+
+.game-slide__description {
+    margin-bottom: 30px;
+}
