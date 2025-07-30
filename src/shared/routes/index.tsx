@@ -1,13 +1,9 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Navigate } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
-  component: App,
+  component: RootRedirect,
 })
 
-function App() {
-  return (
-    <div className="App">
-
-    </div>
-  )
+function RootRedirect() {
+  return <Navigate to='/home' replace />
 }
